@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 public class TestController {
         
     private static Bucket bucket = Bucket.builder()
-        .addLimit(limit -> limit.capacity(100).refillGreedy(10, Duration.ofSeconds(1)))
+        .addLimit(limit -> limit.capacity(1000).refillGreedy(100, Duration.ofSeconds(1)))
         .build();
 
 
